@@ -1,0 +1,63 @@
+
+<html lang="en">
+    <head>
+    	<meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" href="css/pure.css">
+        <link rel="stylesheet" href="css/grids-responsive.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/progressjs.min.css">
+
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>File Uploader</title>
+
+    </head>
+    <body class="pure-g">
+
+        <div id="my-app" class="pure-u-7-8 pure-u-sm-3-4 pure-u-md-1-2 pure-u-lg-2-5">
+            <h1><i class="fa fa-check-square-o"></i> Video Uploader</h1>
+            <form class="pure-form pure-form-stacked" action="http://'http://localhost:5000/api'" method="post" enctype="multipart/form-data">
+                <label id="fileLabel">Choose A File: </label>
+
+                <div class="pure-control-group">
+                    <input type="file" accept="video" name="videoFile" id="fileInput" class="form-control" multiple="multiple" />
+                </div>
+                <div id="success_text"></div>
+                <br />
+                <br />
+                <div id="error_text">
+                    <p>This format is not allowed. Please upload the correct format, video/mp4.</p>
+                </div>
+
+                <div class="pure-controls">
+                    <button type='button' id='uploader' class="pure-button">upload</button>
+                </div>
+            </form>
+                <div id="prog"></div>
+            </span>
+
+            <div id="videosUploaded"></div>
+            <div id="videoDiv">
+                <video id="videoPlayer">
+                    <source src="" type="video/mp4" />
+                </video>
+            </div>
+
+
+        </div>
+
+
+
+    </body>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.0-rc.1/jquery-ui.min.js" integrity="sha256-mFypf4R+nyQVTrc8dBd0DKddGB5AedThU73sLmLWdc0=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.5/socket.io.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+    <script type="text/javascript" src="js/progress.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+
+</html>

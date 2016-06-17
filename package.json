@@ -1,0 +1,25 @@
+
+{
+  "name": "FocusVision-Project",
+  "version": "1.0.0",
+  "description": "File Uploader",
+  "main": "server.js",
+  "dependencies": {
+    "http-hash-router": "^1.1.0",
+    "body-parser": "^1.15.0",
+    "http-browserify": "^1.7.0",
+    "connect": "^3.4.1",
+    "nedb": "^1.8.0",
+    "request": "^2.72.0",
+    "progressbar.js": "^1.0.0",
+    "binaryjs": "^0.2.1",
+    "st": "^1.1.0",
+    "socket.io": "^1.4.5",
+    "express": "^4.13.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  }
+}

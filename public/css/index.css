@@ -1,0 +1,31 @@
+
+body{
+  background-color: lightblue;
+}
+
+#my-app{
+  margin: 3em 1em 1em 1em;
+  padding: 1em;
+  background-color: aliceblue;
+  box-shadow: 3px 3px 10px #000;
+}
+
+#error_text{
+	background-color: #FF1214;
+	font-weight: bold;
+	display: none;
+}
+
+#videoPlayer{
+	display: none;
+}
+
+#success_text{
+  margin: 7px;
+  width: 26%;
+  background-color: #00FF49;
+  text-align: center;
+  box-shadow: 10px 5px 5px black;
+  border-radius: 8px;
+  
+}
